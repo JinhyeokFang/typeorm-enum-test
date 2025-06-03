@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: typeorm-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: typeormtest
+    volumes:
+      - mysqldata:/var/lib/mysql
+  postgres:
+    image: postgres:latest
+    container_name: typeorm-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: typeormtest
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+
+volumes:
+  mysqldata:
+  postgresdata: 

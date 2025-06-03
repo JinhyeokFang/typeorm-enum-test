@@ -1,0 +1,23 @@
+{
+  "name": "typeorm-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "typeorm": "typeorm-ts-node-commonjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^20.11.27",
+    "mysql2": "^3.14.1",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.24",
+    "typescript": "^5.4.2"
+  }
+}
